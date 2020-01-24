@@ -17,7 +17,7 @@
             [(ngModel)]="selectedTemplate" (change)="newTask(selectedTemplate)">
             <option *ngIf="!selectedTemplate">-- Template --</option>
             <ng-template ngFor let-template [ngForOf]="templates">
-              <option *ngIf="!template.blocked" [ngValue]="template">{{template.name}}</option>
+              <option *ngIf="!template.blocked" [ngValue]="template">{{template.description}}</option>
             </ng-template>
 
           </select>

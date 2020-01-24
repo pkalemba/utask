@@ -21,7 +21,7 @@ export class NewComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.templates = this.route.parent.snapshot.data.templates;
+    this.templates = _.orderBy(this.route.parent.snapshot.data.templates, (t: any) => t.description.toLowerCase(), ['asc']);
   }
 
   submit() {
