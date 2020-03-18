@@ -52,6 +52,8 @@ export class GraphService {
             .each(function () {
                 tippy(this, {
                     content: $(this).attr('title'),
+                    allowHTML: true,
+                    animation: 'scale'
                 });
             });
         return innerSVG;
