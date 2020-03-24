@@ -46,7 +46,7 @@ action:
       value: bar
     # optional, array of name and value fields
     headers:
-    - name:  x-request-id
+    - key:  x-request-id
       value: xxx-yyy-zzz
     # optional, string
     body: |
